@@ -3,7 +3,6 @@
     "module": "esnext",
     "moduleResolution": "node",
     "target": "es2021",
-    "jsx": "react",
     "strict": true,
     "strictNullChecks": false,
     "declaration": true,
