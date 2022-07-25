@@ -1,0 +1,23 @@
+{
+  "name": "@kozakl/transitions",
+  "version": "1.0.0",
+  "sideEffects": false,
+  "author": {
+    "name": "Luke Kozak",
+    "email": "kozakluke@gmail.com",
+    "url": "https://github.com/kozakl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kozakl/react-transitions"
+  },
+  "scripts": {
+    "build": "rm -rf ./dist && tsc && copyfiles -u 1 './src/**/*.css' dist/",
+    "publish-dist": "npm run build && cp package.json ./dist && npm publish ./dist --access=public"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.6",
+    "copyfiles": "^2.4.1",
+    "typescript": "^4.7.0"
+  }
+}
